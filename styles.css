@@ -1,8 +1,21 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.odin-title {
+    text-align: center;
+}
+
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 20px;
+}
+
+.center-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 img {
@@ -10,4 +23,9 @@ img {
     width: 300px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.back-to-home {
+    text-align: center;
+    font-size: x-large;
 }
