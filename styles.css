@@ -1,10 +1,16 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    
+}
+
+body {
+    margin: 0;
     padding: 0;
 }
 
-.odin-title {
+.odin-title,
+.recipe-title {
     text-align: center;
     margin: 0;
     padding: 0;
@@ -13,13 +19,15 @@
     margin-bottom: 10px;
     background-color: rgb(43, 9, 59);
     color: white;
-    box-shadow: 16px 16px 16px rgba(0,0,0,.06);
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+    
+    box-shadow: 0 0 16px rgba(0,0,0,.1);
+    /*border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;*/
 }
 
 .index-body {
-    background-color: antiquewhite;
+    background-color: white;
+
 }
 
 .recipe-list {
@@ -38,28 +46,48 @@ a {
     margin: 0;
 }
 
-.recipe {
+.recipe,
+.center-me,
+.section-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
     justify-content: center;
     gap: 30px;
     padding: 32px;
     /*border: 1px solid #eee;*/
     box-shadow: 4px 4px 16px rgba(0,0,0,.1);
     border-radius: 40px;
+    background-color: white;
+}
+
+.recipe {
+    align-items: center;
     height: 380px;
     width: 300px;
 }
 
+.center-me {
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.section-container {
+    margin-left: 40px;
+    margin-right: 40px;
+}
 
 .recipe-body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 }
 
-.recipe-name {
+.recipe-name,
+.section,
+.back-to-home {
     background-color: rgb(43, 9, 59);
     color: white;
     text-align: center;
@@ -68,12 +96,7 @@ a {
     border-radius: 40px;
     width: 300px;
     font-weight: bold;
-}
-
-.center-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-size: larger;
 }
 
 img {
@@ -85,5 +108,13 @@ img {
 
 .back-to-home {
     text-align: center;
-    font-size: x-large;
+    font-size: large;
+    margin-bottom: 20px;
+    background-color: rgb(144, 30, 197);
+}
+
+.section,
+.back-to-home {
+    margin-left: auto;
+    margin-right: auto;
 }
