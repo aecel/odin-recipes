@@ -71,6 +71,10 @@ a {
     width: 300px;
 }
 
+.recipe:hover {
+    box-shadow: 4px 4px 16px rgba(105, 77, 217, 0.525);
+}
+
 .center-me {
     align-items: center;
     margin-left: 40px;
