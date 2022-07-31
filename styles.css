@@ -1,128 +1,151 @@
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.index-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+header {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: rgb(226, 226, 226);
+  text-align: center;
 }
 
 li {
-    padding: 4px;
+  padding: 4px;
 }
 
 .odin-title,
 .recipe-title {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 10px;
-    background-color: rgb(43, 9, 59);
-    color: white;
-    
-    box-shadow: 0 0 16px rgba(0,0,0,.1);
-    /*border-bottom-left-radius: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 10px;
+  background-color: rgb(43, 9, 59);
+  color: white;
+
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  /*border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;*/
 }
 
-.index-body {
-    background-color: white;
-
+.content {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .recipe-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 32px;
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
 a {
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 
 .recipe,
 .center-me,
 .section-container {
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    gap: 30px;
-    padding: 32px;
-    /*border: 1px solid #eee;*/
-    box-shadow: 4px 4px 16px rgba(0,0,0,.1);
-    border-radius: 40px;
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  gap: 30px;
+  padding: 32px;
+  /*border: 1px solid #eee;*/
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  background-color: white;
 }
 
 .recipe {
-    align-items: center;
-    height: 380px;
-    width: 300px;
+  align-items: center;
+  height: 380px;
+  width: 300px;
 }
 
 .recipe:hover {
-    box-shadow: 4px 4px 16px rgba(105, 77, 217, 0.525);
+  box-shadow: 4px 4px 16px rgba(105, 77, 217, 0.525);
 }
 
 .center-me {
-    align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .section-container {
-    margin-left: 40px;
-    margin-right: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .recipe-body {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .recipe-name,
 .section,
 .back-to-home {
-    background-color: rgb(43, 9, 59);
-    color: white;
-    text-align: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border-radius: 40px;
-    width: 300px;
-    font-weight: bold;
-    font-size: larger;
+  background-color: rgb(43, 9, 59);
+  color: white;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 40px;
+  width: 300px;
+  font-weight: bold;
+  font-size: larger;
 }
 
 img {
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-    border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .back-to-home {
-    text-align: center;
-    font-size: large;
-    margin-bottom: 20px;
-    background-color: rgb(144, 30, 197);
+  text-align: center;
+  font-size: large;
+  margin-bottom: 20px;
+  background-color: rgb(144, 30, 197);
 }
 
 .section,
 .back-to-home {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
